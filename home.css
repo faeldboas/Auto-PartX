@@ -1,0 +1,250 @@
+/* Estilos Gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #22252a;
+    color: #2a2e35;
+}
+
+/* Header e Navegação */
+header {
+    background-color: #2d60b3;
+    color: #cccccc;
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+     color: #00aaff; /* Cor dourada para o logo */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+nav ul li a {
+    color: #cccccc;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ff5722;
+}
+
+/* Seção de Banner */
+.banner {
+    background: url('https://via.placeholder.com/1500x500') no-repeat center center/cover;
+    color: #f7f7f7;
+    text-align: center;
+    padding: 10rem 2rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+    background-color: #383a3d;
+}
+
+.banner h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.banner p {
+    font-size: 1.2rem;
+}
+
+/* Seção de Produtos */
+.produtos-grid {
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.produtos-grid h2 {
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    color: #222;
+}
+
+.produto-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 2rem;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+    display: inline-block;
+    width: 30%;
+    margin: 1%;
+}
+
+.produto-card:hover {
+    transform: translateY(-10px);
+}
+
+.produto-card img {
+    max-width: 100%;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+}
+
+.produto-card h3 {
+    font-size: 1.5rem;
+    margin: 1rem 0 0.5rem;
+}
+
+.produto-card .preco {
+    font-size: 1.2rem;
+    color: #ff5722;
+    font-weight: bold;
+}
+
+/* Seção de Contato */
+.contato-form {
+    padding: 4rem 2rem;
+    background-color: #292d32;
+    color: #fff;
+    text-align: center;
+}
+
+.contato-form h2 {
+     padding: 4rem 2rem;
+    background-color: #03183f;
+    color: #cccccc;
+    text-align: center;
+    padding: 10rem 10rem;
+    display: inline-block; 
+    padding: 1rem 1.5rem; 
+    border-radius: 5px; 
+    margin-bottom: 2rem; 
+}
+
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: 0 auto;
+    gap: 1rem;
+    
+}
+
+#contact-form input, #contact-form textarea {
+    padding: 0.8rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #3e4247;
+    color: #cccccc;
+    border: 1px solid #353535;
+}
+
+#contact-form input::placeholder, #contact-form textarea::placeholder {
+    color: #777;
+}
+
+#contact-form button {
+    padding: 1rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #ff5722;
+    color: #fff;
+    font-weight: bold;
+}
+
+#contact-form button:hover {
+    background-color: #e54d1a;
+}
+
+/* Rodapé */
+footer {
+    background-color: #22252a;
+    color: #cccccc;
+    text-align: center;
+    padding: 1.5rem 0;
+}
+/* No seu arquivo style.css, encontre esta parte */
+.slideshow-container {
+    max-width: 800px;
+    position: relative;
+    margin: auto;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    /* Adicione estas duas linhas para garantir o ajuste */
+    width: 100%;
+    max-width: 800px;
+}
+
+/* E também confirme se o código das setas está assim */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 24px;
+    transition: 0.6s ease;
+    user-select: none;
+    background-color: rgba(0,0,0,0.8);
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev {
+    left: 0;
+    border-radius: 0 3px 3px 0;
+}
+.mySlides img {
+    width: 100%;
+    border-radius: 8px;
+    height: 70%;
+}
+.logo{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ffd700; /* Cor dourada para o logo */
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+.logo img {
+    height: 40px; /* Ajuste conforme necessário */
+    margin-right: 10px;
+    border-radius: 3px;
+}
+.footer-logo {
+    height: 300px; /* Ajuste conforme necessário */
+    margin-right: 10px;
+    border-radius: 10px;
+}
+h2 {
+    color: #605f5f;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+    font-weight: bold;
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+    text-align: center;
+
+}
+.h1 {
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+    font-weight: bold;
+    margin-bottom: 1rem;
+    font-size: 3rem;
+}
