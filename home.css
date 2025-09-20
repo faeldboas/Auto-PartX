@@ -9,7 +9,6 @@ body {
 
 /* Header e Navegação */
 header {
-    background-color: #2d60b3;
     color: #cccccc;
     padding: 1rem 2rem;
     position: sticky;
@@ -21,12 +20,20 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: linear-gradient(90deg, #22252a 0%, #2a2e35 100%);
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    padding: 0.5rem 2rem;
+    animation: fadeInMenu 1s ease;
+}
+@keyframes fadeInMenu {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
 }
 
 .logo {
     font-size: 1.5rem;
     font-weight: bold;
-     color: #00aaff; /* Cor dourada para o logo */
+     color: #0fa0e8; /* Cor dourada para o logo */
 }
 
 nav ul {
@@ -43,7 +50,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #ff5722;
+    color: #1adc37;
 }
 
 /* Seção de Banner */
@@ -216,7 +223,7 @@ footer {
 .logo{
     font-size: 1.5rem;
     font-weight: bold;
-    color: #ffd700; /* Cor dourada para o logo */
+    color: #8d8b82; /* Cor dourada para o logo */
     text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
     cursor: pointer;
     display: flex;
@@ -247,4 +254,18 @@ h2 {
     font-weight: bold;
     margin-bottom: 1rem;
     font-size: 3rem;
+}
+.whatsapp-float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    background-color: #25d366;
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 1000;
 }

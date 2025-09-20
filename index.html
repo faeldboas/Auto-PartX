@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Auto PartX | Peças para Carros de Luxo</title>
+  <link rel="stylesheet" href="index.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+   <div vw class="enabled">
+       <div vw-access-button class="active"></div>
+       <div vw-plugin-wrapper>
+         <div class="vw-plugin-top-wrapper"></div> 
+       </div>
+     </div>
+     <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+     <script>
+       new window.VLibras.Widget('https://vlibras.gov.br/app');
+     </script>
+   </body>
+  <!-- Botão contraste -->
+  <button id="contrasteBtn" class="botao-flutuante">
+    <span class="icone">🌓</span>
+    <span class="tooltip">Contrast
+  </span>
+  </button>
+
+  <!-- Botão leitor -->
+  <button id="lerBtn" class="botao-flutuante leitor">
+    <span class="icone">🔊</span>
+    <span class="tooltip">Leitor</span>
+  </button>
+
+  <header>
+    <nav>
+      <div class="logo">Auto PartX</div>
+      <ul>
+        <li><a href="#home">Início</a></li>
+        <li><a href="#produtos">Produtos</a></li>
+        <li><a href="#contato">Contato</a></li>
+        <li><a href="login.html">Login</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="conteudo">
+    <section id="home" class="banner-img">
+  <h1>Peças Exclusivas para Carros de Luxo</h1>
+  <p>Qualidade e Desempenho para sua máquina.</p>
+  <button class="cta-btn" onclick="location.href='#produtos'">Ver Produtos</button>
+</section>
+    <!-- Slides -->
+    <section class="slider-container">
+      <div class="slideshow-container">
+        <h2>Marcas Parceiras</h2>
+
+        <div class="mySlides fade">
+          <img src="imgs/Mercedes.png" alt="Logo Mercedes">
+        </div>
+
+        <div class="mySlides fade">
+          <img src="imgs/Porshe.png" alt="Logo Porsche">
+        </div>
+        
+        <div class="mySlides fade">
+          <img src="imgs/bmw.png" alt="Logo BMW">
+        </div>
+        
+        <div class="mySlides fade">
+          <img src="imgs/Toyota.png" alt="Logo Toyota">
+        </div>
+        
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span> 
+        <span class="dot" onclick="currentSlide(2)"></span> 
+        <span class="dot" onclick="currentSlide(3)"></span> 
+        <span class="dot" onclick="currentSlide(4)"></span>
+      </div>
+    </section>
+
+    <section id="produtos" class="produtos-grid">
+  <h2>Nossos Produtos</h2>
+
+  <div class="produto-card">
+    <img src="imgs card/biturbo.png" alt="Turbina Esportiva">
+    <h3>Turbo Compressor Biturbo Porsche 911</h3>
+    <p>Tecnologia de duplo turbo para máxima potência e resposta imediata.</p>
+    <span class="preco">R$ 89.000,00</span>
+    <button class="carrinho-btn" title="Adicionar ao carrinho">🛒</button>
+  </div>
+
+  <div class="produto-card">
+    <img src="imgs card/freios.png" alt="Rodas de Liga Leve">
+    <h3>Kit de Freios Brembo Carbon Ceramic</h3>
+    <p>Sistema de freios de competição com frenagem precisa em alta temperatura.</p>
+    <span class="preco">R$ 54.500,00</span>
+    <button class="carrinho-btn" title="Adicionar ao carrinho">🛒</button>
+  </div>
+
+  <div class="produto-card">
+    <img src="imgs card/suspensao.png" alt="Freios de Carbono Cerâmica">
+    <h3>Suspensão Esportiva Regulável KW V3</h3>
+    <p>Ajuste de altura e rigidez para conforto e esportividade.</p>
+    <span class="preco">R$ 28.900,00</span>
+    <button class="carrinho-btn" title="Adicionar ao carrinho">🛒</button>
+  </div>
+
+  <!-- NOVOS PRODUTOS -->
+  <div class="produto-card">
+    <img src="imgs card/filtro.png" alt="Suspensão Esportiva">
+    <h3>Filtro de Ar K&N Performance</h3>
+    <p>Aumenta o fluxo de ar no motor, gerando mais potência.</p>
+    <span class="preco">R$ 1.200,00</span>
+    <button class="carrinho-btn" title="Adicionar ao carrinho">🛒</button>
+  </div>
+
+  <div class="produto-card">
+    <img src="imgs card/escape.png" alt="Escape Esportivo">
+    <h3>Escapamento Akrapovič Titanium</h3>
+    <p>Ultraleve em titânio, som esportivo e ganho de desempenho.</p>
+    <span class="preco">R$ 36.700,00</span>
+    <button class="carrinho-btn" title="Adicionar ao carrinho">🛒</button>
+  </div>
+
+  <div class="produto-card">
+    <img src="imgs card/fueltech.png" alt="Kit Aerodinâmico">
+    <h3>Injeção Eletrônica FuelTech FT600</h3>
+    <p>Controle avançado do motor com mapas programáveis.</p>
+    <span class="preco">R$ 9.800,00</span>
+    <button class="carrinho-btn" title="Adicionar ao carrinho">🛒</button>
+  </div>
+
+  <div class="produto-card">
+    <img src="imgs card/radiador.png" alt="Banco de Couro Premium">
+    <h3>Radiador Mishimoto High-Flow</h3>
+    <p>Resfriamento eficiente para altas exigências.</p>
+    <span class="preco">R$ 6.400,00</span>
+    <button class="carrinho-btn" title="Adicionar ao carrinho">🛒</button>
+  </div>
+
+  <div class="produto-card">
+    <img src="imgs card/velas.png" alt="Faróis LED Matrix">
+    <h3>Velas de Ignição NGK Iridium Premium (jogo com 4)</h3>
+    <p>Maior durabilidade e ignição precisa.</p>
+    <span class="preco">R$ 950,00</span>
+    <button class="carrinho-btn" title="Adicionar ao carrinho">🛒</button>
+  </div>
+
+  <div class="produto-card">
+    <img src="imgs card/embreagem.png" alt="Volante Esportivo">
+    <h3>Embreagem Sachs Racing Performance</h3>
+    <p>Trocas rápidas e firmeza ideal para torque extremo.</p>
+    <span class="preco">R$ 14.300,00</span>
+    <button class="carrinho-btn" title="Adicionar ao carrinho">🛒</button>
+  </div>
+  <button type="button" class="ver-mais-btn" onclick="location.href='produtos.html'">Ver Mais Produtos</button>
+</section>
+
+    <!-- Contato -->
+    <section id="contato" class="contato-form">
+      <h2>Fale Conosco</h2>
+      <form id="contact-form">
+        <input type="text" id="nome" placeholder="Seu Nome" required>
+        <input type="email" id="email" placeholder="Seu Email" required>
+        <textarea id="mensagem" placeholder="Sua Mensagem" required></textarea>
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <img src="imgs2/banner1.png" alt="Auto PartX Logo" class="footer-logo">
+    <p>&copy; 2025 Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="js.js"></script>
+</body>
+</html>
